@@ -26,14 +26,13 @@ public class MemberController {
 //        System.out.println(form.toString());
         log.info(form.toString());
 
-
         Member member = form.toEntity();
         log.info(member.toString());
 
         Member saved = memberRepository.save(member);
         log.info(saved.toString());
 
-        return "";
+        return "redirect:/";
 
     }
 
